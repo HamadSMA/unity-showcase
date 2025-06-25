@@ -24,8 +24,6 @@
 - Aligned and spaced objects to create a balanced layout
 - Used colors and shapes to add visual variety
 
----
-
 ## 🛠 Tools & Components Used
 
 - Scene View
@@ -36,12 +34,6 @@
 - Physics (rigidbody & colliders)
 
 ---
-
-## ✅ Completion
-
-- ✔️ Completed the Kids Playroom project
-- ✔️ Gained confidence in navigating Unity’s 3D workspace
-- ✔️ Prepared for more advanced level design
 
 ## Project: Ktichen & Sounds
 
@@ -66,8 +58,6 @@
 - Applied a randomizer script for bird sound sources
 - Created more realistic environments with subtle sound variations
 
----
-
 ## 🛠 Tools & Components Used
 
 - `AudioSource`
@@ -77,8 +67,30 @@
 
 ---
 
-## ✅ Completion
+## Project: Player # Collectibles
 
-- ✔️ Completed the Audio Essentials unit
-- ✔️ Earned experience in Unity’s audio system
-- ✔️ Prepared to use sound design in future scenes
+<img src="./collect.gif" width="400" height="auto"/>
+
+## 🧠 What I Learned
+
+### 🎮 Movement & Input
+
+- Added a **movement script** to control a character (A UFO) around the scene
+- Learned to read input and apply it to a GameObject's transform
+
+### 🧩 Interactivity
+
+- Created a **rotating collectible** and programmed the character to **collect** it on contact
+- Used collision detection and triggers to trigger VFXs upon collision
+
+### 📌 Scene & Camera Control
+
+- Adjusted the **camera** to follow the player
+- Managed GameObject activation/deactivation through scripting
+
+## 🛠 Tools & Concepts Used
+
+- C# scripts
+- Core programming: variables, conditionals, classes and objects
+- Unity API: `OnTriggerEnter`, `Input.GetAxis`, `Instantiate`
+- Editor: linking scripts to GameObjects and components in the inspector
