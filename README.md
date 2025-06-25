@@ -1,6 +1,8 @@
 # Unity Showcase
 
 ## Project: Kids Playroom
+<img src="./ball-tower.gif" width="400" height="auto"/>
+
 
 <img src="./ball-tower.gif" width="400" height="auto"/>
 
