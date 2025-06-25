@@ -67,7 +67,7 @@
 
 ---
 
-## Project: Player # Collectibles
+## Project: Player & Collectibles
 
 <img src="./collect.gif" width="400" height="auto"/>
 
