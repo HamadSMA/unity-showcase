@@ -24,7 +24,7 @@
 - Aligned and spaced objects to create a balanced layout
 - Used colors and shapes to add visual variety
 
-## 🛠 Tools & Components Used
+### 🛠 Tools & Components Used
 
 - Scene View
 - Move / Rotate / Scale tools
@@ -58,7 +58,7 @@
 - Applied a randomizer script for bird sound sources
 - Created more realistic environments with subtle sound variations
 
-## 🛠 Tools & Components Used
+### 🛠 Tools & Components Used
 
 - `AudioSource`
 - `AudioListener`
@@ -88,7 +88,7 @@
 - Adjusted the **camera** to follow the player
 - Managed GameObject activation/deactivation through scripting
 
-## 🛠 Tools & Concepts Used
+### 🛠 Tools & Concepts Used
 
 - C# scripts
 - Core programming: variables, conditionals, classes and objects
@@ -118,7 +118,7 @@
 - Applied basic physics components (RigidBody2D, Collider2D) to interactive elements
 - Created a simple animated sprite using Unity's sprite editor
 
-## 🛠 Tools & Concepts Used
+### 🛠 Tools & Concepts Used
 
 - **Sprite Renderer**, **Rigidbody2D**, **Collider2D**
 - C# scripts using `MonoBehaviour` for movement and interaction
