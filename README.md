@@ -2,6 +2,8 @@
 
 ## Project: Kids Playroom
 
+<img src="./ball-tower.gif" width="400" height="auto"/>
+
 ### 🧭 Navigating 3D Space
 
 - **Right Mouse + WASD:** Move around
