@@ -1,51 +1,84 @@
 # Unity Showcase
 
 ## Project: Kids Playroom
-<img src="./ball-tower.gif" width="400" height="auto"/>
-
 
 <img src="./ball-tower.gif" width="400" height="auto"/>
+
+## 🧠 What I Learned
 
 ### 🧭 Navigating 3D Space
 
-- **Right Mouse + WASD:** Move around
-- **Middle Mouse / Alt + Left Click:** Pan
-- **Scroll Wheel:** Zoom
-- **F:** Focus on selected object
-- **Scene Gizmo:** Click to change view angles
+- Moved around using the **Scene View** tools (hand tool, move, rotate, scale)
+- Practiced zooming, orbiting, and panning
+- Used the **gizmo** and **scene axes** to reorient the camera
 
-### 🧱 Primitive Shapes
+### 🧱 Working with GameObjects
 
-- Add from: `GameObject > 3D Object`
-- Useful for testing and prototyping
-- Easily scaled and moved in the Inspector
+- Placed and manipulated **3D primitives** (cubes, spheres, cylinders)
+- Used **Move, Rotate, and Scale tools** on objects
+- Snapped objects to the ground for better alignment
 
-### 🎥 Camera Alignment
+### 💡 Scene Composition
 
-- Move and rotate like any object
-- To match Scene view: select camera → `Ctrl/Cmd + Shift + F`
+- Learned how to duplicate objects to fill the room quickly
+- Aligned and spaced objects to create a balanced layout
+- Used colors and shapes to add visual variety
 
-### 💡 Directional Light
+---
 
-- Simulates sunlight
-- Rotate to change shadow direction
-- Tweak color and intensity in Light component
+## 🛠 Tools & Components Used
 
-### 🧲 Rigidbodies
+- Scene View
+- Move / Rotate / Scale tools
+- 3D Primitives (Cube, Sphere, etc.)
+- Inspector and Hierarchy windows
+- Scene Gizmo
+- Physics (rigidbody & colliders)
 
-- Add physics (gravity, forces) to objects
-- Key options:
-  - **Use Gravity**
-  - **Is Kinematic**
-  - **Mass / Drag**
+---
 
-### 🧱 Colliders
+## ✅ Completion
 
-- Invisible shapes for detecting collisions
-- Types: Box, Sphere, Capsule, Mesh
-- Use **Is Trigger** for non-physical collisions
+- ✔️ Completed the Kids Playroom project
+- ✔️ Gained confidence in navigating Unity’s 3D workspace
+- ✔️ Prepared for more advanced level design
 
-### 📦 Prefabs
+## Project: Ktichen & Sounds
 
-- Save reusable objects by dragging into Project
-- Useful for spawning and editing many instances
+<img src="./kitchen-sounds.gif" width="400" height="auto"/>
+
+## 🧠 What I Learned
+
+### 🔊 Audio Basics
+
+- Added **Audio Sources** to objects
+- Used the **Audio Listener** to simulate the player's ears
+- Learned how to loop background music and adjust volume
+
+### 🌐 3D Spatial Sound
+
+- Enabled **Spatial Blend** for 3D positional audio
+- Adjusted **Min/Max distance** for sound attenuation
+- Noticed how sound changes based on the listener's position
+
+### 🌀 Environmental Audio
+
+- Applied a randomizer script for bird sound sources
+- Created more realistic environments with subtle sound variations
+
+---
+
+## 🛠 Tools & Components Used
+
+- `AudioSource`
+- `AudioListener`
+- Audio clips (looping, SFX)
+- Spatial Blend, Volume balancing
+
+---
+
+## ✅ Completion
+
+- ✔️ Completed the Audio Essentials unit
+- ✔️ Earned experience in Unity’s audio system
+- ✔️ Prepared to use sound design in future scenes
