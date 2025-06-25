@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public float speed = 5.0f;
     public float rotationSpeed = 120.0f;
+    public float jumpForce = 5.0f;
     private Rigidbody rb;
     void Start()
     {
@@ -14,7 +15,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetButtonDown("Jump"))
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.VelocityChange);
+        }
     }
     private void FixedUpdate()
     {

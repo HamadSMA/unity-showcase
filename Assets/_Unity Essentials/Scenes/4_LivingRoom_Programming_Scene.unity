@@ -633,6 +633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   rotationSpeed: 120
+  jumpForce: 4
 --- !u!4 &361207085 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8939499483144501276, guid: bc3f8280b6d69439cb3e7c45f5c84cd8,
