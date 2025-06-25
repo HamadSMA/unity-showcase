@@ -94,3 +94,32 @@
 - Core programming: variables, conditionals, classes and objects
 - Unity API: `OnTriggerEnter`, `Input.GetAxis`, `Instantiate`
 - Editor: linking scripts to GameObjects and components in the inspector
+
+## Project 2D Room Maze
+
+<img src="./2d-collect.gif" width="400" height="auto"/>
+
+## 🧠 What I Learned
+
+### 🧭 Navigating & Building in 2D
+
+- Moved and positioned GameObjects in the **2D Scene View**
+- Imported and placed **Sprite assets** for characters and items
+
+### 🎯 Interactivity & Physics
+
+- Scripted movement for a player-controlled character in 2D
+- Used **2D collision detection** and physics to enable object collection
+- Adjusted parameters such mass, gravity scale, linear damping and angular damping to simulate realistic physics
+
+### 🛠 Scene Setup & Components
+
+- Organized sprites and GameObjects into a cohesive 2D scene
+- Applied basic physics components (RigidBody2D, Collider2D) to interactive elements
+- Created a simple animated sprite using Unity's sprite editor
+
+## 🛠 Tools & Concepts Used
+
+- **Sprite Renderer**, **Rigidbody2D**, **Collider2D**
+- C# scripts using `MonoBehaviour` for movement and interaction
+- Unity Editor’s 2D-specific tools (Scene View, asset browser)
