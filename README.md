@@ -1,125 +1,84 @@
 # Unity Showcase
 
-## Project: Kids Playroom
+A collection of small Unity scenes I built while working through the fundamentals of the engine — 3D layout, audio, scripting, physics, and 2D. Each project focuses on a specific area, with a short note on what it taught me and which Unity systems it uses.
+
+## Contents
+
+| Scene | Focus |
+| --- | --- |
+| [Kids Playroom](#kids-playroom) | 3D scene composition and primitives |
+| [Kitchen & Sounds](#kitchen--sounds) | Spatial audio and `AudioSource` setup |
+| [Player & Collectibles](#player--collectibles) | C# scripting, input, and triggers |
+| [2D Room Maze](#2d-room-maze) | Sprites, 2D physics, and colliders |
+
+---
+
+## Kids Playroom
 
 <img src="./ball-tower.gif" width="400" height="auto"/>
 
-## 🧠 What I Learned
+A small 3D room arranged from primitive shapes, used as practice for laying out a scene and getting comfortable navigating the editor.
 
-### 🧭 Navigating 3D Space
+**What I built**
+- A playroom assembled from cubes, spheres, and cylinders, with objects duplicated and spaced to give the room some structure.
+- A ball-tower setup that uses Rigidbody and colliders so the stack reacts when nudged.
 
-- Moved around using the **Scene View** tools (hand tool, move, rotate, scale)
-- Practiced zooming, orbiting, and panning
-- Used the **gizmo** and **scene axes** to reorient the camera
-
-### 🧱 Working with GameObjects
-
-- Placed and manipulated **3D primitives** (cubes, spheres, cylinders)
-- Used **Move, Rotate, and Scale tools** on objects
-- Snapped objects to the ground for better alignment
-
-### 💡 Scene Composition
-
-- Learned how to duplicate objects to fill the room quickly
-- Aligned and spaced objects to create a balanced layout
-- Used colors and shapes to add visual variety
-
-### 🛠 Tools & Components Used
-
-- Scene View
-- Move / Rotate / Scale tools
-- 3D Primitives (Cube, Sphere, etc.)
-- Inspector and Hierarchy windows
-- Scene Gizmo
-- Physics (rigidbody & colliders)
+**Unity systems**
+Scene View navigation · 3D primitives · Transform tools · Rigidbody + colliders · Inspector / Hierarchy
 
 ---
 
-## Project: Ktichen & Sounds
+## Kitchen & Sounds
 
 <img src="./kitchen-sounds.gif" width="400" height="auto"/>
 
-## 🧠 What I Learned
+A kitchen scene focused on audio: making sound feel like it belongs in the space rather than just playing on top of it.
 
-### 🔊 Audio Basics
+**What I built**
+- Looping ambient music plus localized `AudioSource` clips on individual props.
+- Spatial blend tuned so sounds attenuate naturally as the listener moves.
+- A small randomizer script that varies bird SFX timing so the ambience doesn't feel mechanical.
 
-- Added **Audio Sources** to objects
-- Used the **Audio Listener** to simulate the player's ears
-- Learned how to loop background music and adjust volume
-
-### 🌐 3D Spatial Sound
-
-- Enabled **Spatial Blend** for 3D positional audio
-- Adjusted **Min/Max distance** for sound attenuation
-- Noticed how sound changes based on the listener's position
-
-### 🌀 Environmental Audio
-
-- Applied a randomizer script for bird sound sources
-- Created more realistic environments with subtle sound variations
-
-### 🛠 Tools & Components Used
-
-- `AudioSource`
-- `AudioListener`
-- Audio clips (looping, SFX)
-- Spatial Blend, Volume balancing
+**Unity systems**
+`AudioSource` · `AudioListener` · Spatial Blend / Min–Max distance · C# scripting for randomization
 
 ---
 
-## Project: Player & Collectibles
+## Player & Collectibles
 
 <img src="./collect.gif" width="400" height="auto"/>
 
-## 🧠 What I Learned
+A controllable UFO that flies around a room, picks up rotating collectibles, and triggers VFX on contact.
 
-### 🎮 Movement & Input
+**What I built**
+- A movement script driven by `Input.GetAxis` that translates the player each frame.
+- Collectibles that rotate in place and disappear on trigger overlap, spawning a particle effect.
+- A camera that follows the player so the scene stays framed during movement.
 
-- Added a **movement script** to control a character (A UFO) around the scene
-- Learned to read input and apply it to a GameObject's transform
+**Unity systems**
+C# `MonoBehaviour` scripts · `Input.GetAxis` · `OnTriggerEnter` · `Instantiate` · Camera follow
 
-### 🧩 Interactivity
+---
 
-- Created a **rotating collectible** and programmed the character to **collect** it on contact
-- Used collision detection and triggers to trigger VFXs upon collision
-
-### 📌 Scene & Camera Control
-
-- Adjusted the **camera** to follow the player
-- Managed GameObject activation/deactivation through scripting
-
-### 🛠 Tools & Concepts Used
-
-- C# scripts
-- Core programming: variables, conditionals, classes and objects
-- Unity API: `OnTriggerEnter`, `Input.GetAxis`, `Instantiate`
-- Editor: linking scripts to GameObjects and components in the inspector
-
-## Project 2D Room Maze
+## 2D Room Maze
 
 <img src="./2d-collect.gif" width="400" height="auto"/>
 
-## 🧠 What I Learned
+A top-down 2D scene where a sprite character moves through a room and collects items, with physics tuned to feel responsive rather than floaty.
 
-### 🧭 Navigating & Building in 2D
+**What I built**
+- Sprite-based player and pickups laid out in a 2D scene.
+- 2D movement script with collision detection against walls and triggers for collectibles.
+- Physics parameters (mass, gravity scale, linear and angular damping) tuned so motion feels intentional.
+- A simple frame-based sprite animation using Unity's sprite editor.
 
-- Moved and positioned GameObjects in the **2D Scene View**
-- Imported and placed **Sprite assets** for characters and items
+**Unity systems**
+`SpriteRenderer` · `Rigidbody2D` · `Collider2D` · 2D Scene View · Sprite Editor
 
-### 🎯 Interactivity & Physics
+---
 
-- Scripted movement for a player-controlled character in 2D
-- Used **2D collision detection** and physics to enable object collection
-- Adjusted parameters such mass, gravity scale, linear damping and angular damping to simulate realistic physics
+## Running it
 
-### 🛠 Scene Setup & Components
+Open the project in Unity (the version is pinned in `ProjectSettings/ProjectVersion.txt`). The scenes live under [Assets/_Unity Essentials/Scenes/](Assets/_Unity%20Essentials/Scenes/), with a main menu scene (`0_MainMenu_Scene`) that links to each of the projects above.
 
-- Organized sprites and GameObjects into a cohesive 2D scene
-- Applied basic physics components (RigidBody2D, Collider2D) to interactive elements
-- Created a simple animated sprite using Unity's sprite editor
-
-### 🛠 Tools & Concepts Used
-
-- **Sprite Renderer**, **Rigidbody2D**, **Collider2D**
-- C# scripts using `MonoBehaviour` for movement and interaction
-- Unity Editor’s 2D-specific tools (Scene View, asset browser)
+WebGL builds are also included in [WebGL Builds/](WebGL%20Builds/) if you'd rather not open the editor.
